@@ -1,0 +1,70 @@
+\documentclass[12pt,a4paper,oneside]{book}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{times} % for Times New Roman Font
+\usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
+\usepackage{graphicx}
+
+\usepackage{algorithm} % package for writing algorithms
+\usepackage{algorithmic}
+%\usepackage{algpseudocode} % package for writing pseudocodes
+
+% packages for working schedule
+\usepackage{tikz}
+\usepackage{pgfgantt}
+
+% Package for eps graphics files
+\usepackage{epstopdf}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[hidelinks]{hyperref}
+
+\numberwithin{equation}{section}
+\numberwithin{algorithm}{section}
+
+\setlength{\parskip}{1.0ex plus 0.5ex minus 0.5ex}
+\setlength{\parindent}{0em}
+\setcounter{secnumdepth}{4} % Subsection level count
+%\usepackage{natbib} % package for bibliography style
+\hypersetup{
+	colorlinks,
+	linkcolor={black!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
+
+\begin{document}
+
+%\author{\textit{Mahesh Kumar Yadav}\\ \small{contact@maheshyadav.com.np}\\\small{977-9840060484}}
+%\maketitle
+\include{Others/TzunamiCover}
+% Turn on the style
+\pagestyle{fancy}
+% Clear the header and footer
+\fancyhead{}
+\fancyfoot{}
+% Set the right side of the footer to be the page number
+\fancyfoot[R]{\thepage}
+\pagenumbering{arabic}
+{	\pagenumbering{roman}
+	\renewcommand{\contentsname}{Table of Contents}
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	
+}
+\clearpage
+
+\fancyfoot[R]{Page {\textbar} \thepage\ - \pageref{LastPage}}
+\pagenumbering{arabic}
+\fancyhead[R]{Chapter \thechapter}
+
+\input{Others/VarDefinition}
+\input{Chapters/Chapter1}
+\input{Chapters/Chapter2}
+\input{Chapters/Copyright}		
+\end{document}
