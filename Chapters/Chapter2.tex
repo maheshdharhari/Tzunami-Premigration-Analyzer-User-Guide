@@ -1,9 +1,9 @@
 \chapter{GETTING STARTED WITH \MakeUppercase{\appName} TOOL}
-This chapter describes how to create an analysis report using \appName and save analyzed result for future use. This chapter contains the following topics:
+This chapter describes how to create an analysis report using \appName\ and save analyzed result for future use. This chapter contains the following topics:
 \begin{itemize}
   \item Running \appName
   \item Making connection and loading ECM systems
-  \item Overview of \appName window Settings for \appName
+  \item Overview of \appName\ window Settings for \appName
   \item Generating Report
   \item Analyzing the report generated
   \item Saving and loading, exporting the analyzed report
@@ -13,19 +13,19 @@ This chapter describes how to create an analysis report using \appName and save 
 
 \subsection{Running \appName}
 \begin{itemize}
-\item[--] To run \appName, click Start > All Programs > Tzunami > \appName - for windows 7 or older version, or
+\item[--] To run \appName, click Start > All Programs > Tzunami > \appName\ - for windows 7 or older version, or
 For windows 10 and above
-Click    button and scroll through the alphabetical list for Tzunami. Under this locate \appName and click it to run. ECM Selection wizard appears as follows:
+Click    button and scroll through the alphabetical list for Tzunami. Under this locate \appName\ and click it to run. ECM Selection wizard appears as follows:
 \begin{figure} 
   \centering
 	\includegraphics[width=0.8\textwidth]{Images/SelectEccmScreen.png}
- \caption{\appName, Select ECM System screen}
+ \caption{Select ECM System screen}
 \end{figure}
 \item[--] Next select the required ECM system for the Analysis of the source content.
 \end{itemize}
 \section{MAKING CONNECTION AND LOADING ECM SYSTEMS}
 \subsection{Making connection with the ECM system}
-Run \appName Tool. The home screen appears as mentioned above. Now, click the icon of the required ECM system. Respective connection wizard will pop up for the respective ECM system. Provide necessary information to connect with the ECM system and proceed further.\\
+Run \appName\ Tool. The home screen appears as mentioned above. Now, click the icon of the required ECM system. Respective connection wizard will pop up for the respective ECM system. Provide necessary information to connect with the ECM system and proceed further.\\
 According to the supported ECM type making connection with them is explained below:
 \subsection*{Making connection with Confluence Server:}
 To make the connection with Confluence Server using \appName, the first thing to check is whether the Remote APIs are enabled in the Confluence Administration Console or not. If not, please follow the instruction given below, and the setting for all versions of confluence is the same.\\
@@ -46,7 +46,7 @@ Steps to enable Remote API:
 		\item User must be member of confluence-administrator Groups.
 		\item User must be a member of confluence-user group.
 	\end{itemize}
-Another thing to keep in mind is proxy settings, this must be disabled to avoid conflict between \appName and Confluence server. For more information, please contact your system administrator.
+Another thing to keep in mind is proxy settings, this must be disabled to avoid conflict between \appName\ and Confluence server. For more information, please contact your system administrator.
 \subsection*{To make connection with Confluence Server:}
 \begin{enumerate}
 	\item Click the Confluence Server icon, connection screen appears as follows:
@@ -59,15 +59,16 @@ Another thing to keep in mind is proxy settings, this must be disabled to avoid 
 \begin{table*}[] \centering
 	%\ra{1.3}
 	\begin{small}
-		\begin{tabular}{@{}lrrrrrrrrrrrr@{}}\toprule
-			\textbf{Field}  & \textbf{Description} \\ \midrule
-			\textbf{URL} & Enter the URL of the Confluence Server.\\ \hdashline
-			\textbf{Username} & Enter the username to use when connecting to Confluence Server.\\ \hdashline
-			\textbf{Password} & Enter the password of the user.\\ 
+		\begin{tabular}{@{}lrrrrrrrrrrrr@{}} \toprule
+			\textbf{Field}  & \textbf{Description} \\ \midrule 
+			\textbf{URL} & Enter the URL of the Confluence Server.\\ 
+			\textbf{Username} & Enter the username to use when connecting to Confluence Server.\\ 
+			\textbf{Password} & Enter the password of the user.\\ [1ex]
 			\bottomrule
 		\end{tabular}
 	\end{small}
 	\caption{Connection Description Fields for Confluence}
+	\label{table:Confluence} % is used to refer this table in the text
 \end{table*}
 \item Click Next Button.
 \end{enumerate}
