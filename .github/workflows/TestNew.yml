@@ -1,4 +1,0 @@
-uses: xu-cheng/latex-action@v3
-  with:
-    root_file: |
-      Tzunami Premigration Analyzer User Guide.tex
