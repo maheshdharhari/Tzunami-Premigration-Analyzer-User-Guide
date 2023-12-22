@@ -12,4 +12,6 @@ jobs:
         with:
           root_file: Tzunami Premigration Analyzer User Guide.tex
       - name: Download a Build Artifact
-        uses: actions/download-artifact@v4.1.0
+        uses: actions/download-artifact@v3
+      - name: List Files
+        run: ls -R
