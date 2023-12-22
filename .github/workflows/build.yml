@@ -13,5 +13,3 @@ jobs:
           root_file: Tzunami Premigration Analyzer User Guide.tex
       - name: Download a Build Artifact
         uses: actions/download-artifact@v4.1.0
-        with:
-          name: Tzunami Premigration Analyzer User Guide.pdf
