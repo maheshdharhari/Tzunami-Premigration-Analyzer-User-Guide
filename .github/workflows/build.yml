@@ -24,7 +24,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: document
-          path: 'Tzunami Premigration Analyzer User Guide.pdf'
+          path: document/'Tzunami Premigration Analyzer User Guide.pdf'
       - name: Deploy PDFs to gh-pages
         run: |
          cd document
