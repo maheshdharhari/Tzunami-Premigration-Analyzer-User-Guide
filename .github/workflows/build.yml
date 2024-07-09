@@ -12,7 +12,7 @@ jobs:
         with:
           root_file: Tzunami Premigration Analyzer User Guide.tex
       - name: Compile LaTeX document
-        run: latexmk -pdf -f -interaction=nonstopmode Tzunami Premigration Analyzer User Guide.tex
+        run: pdflatex -pdf -f -interaction=nonstopmode Tzunami Premigration Analyzer User Guide.tex
       
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v3
