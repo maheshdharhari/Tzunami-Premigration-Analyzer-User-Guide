@@ -2,10 +2,10 @@ name: Build LaTeX document
 on:
   push:
     branches:
-      - lastest
+      - latest
   pull_request:
     branches:
-      - lastest
+      - latest
 jobs:
   build_latex:
     runs-on: ubuntu-latest
