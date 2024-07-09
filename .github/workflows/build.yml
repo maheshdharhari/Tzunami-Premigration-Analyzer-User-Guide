@@ -1,5 +1,11 @@
 name: Build LaTeX document
-on: [push]
+on:
+  push:
+    branches:
+      - lastest
+  pull_request:
+    branches:
+      - lastest
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -21,7 +27,7 @@ jobs:
           path: 'Tzunami Premigration Analyzer User Guide.pdf'
       - name: Deploy PDFs to gh-pages
         run: |
-         cd examples
+         cd document
          git init
          git add *.pdf
          git config --global --add safe.directory /github/workspace
