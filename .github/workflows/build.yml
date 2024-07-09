@@ -2,10 +2,10 @@ name: Build LaTeX document
 on:
   push:
     branches:
-      - latest
+      - WorkFlow
   pull_request:
     branches:
-      - latest
+      - WorkFlow
 jobs:
   build_latex:
     runs-on: ubuntu-latest
