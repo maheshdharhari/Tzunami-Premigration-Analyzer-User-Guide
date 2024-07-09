@@ -19,3 +19,19 @@ jobs:
         with:
           name: document
           path: 'Tzunami Premigration Analyzer User Guide.pdf'
+      - name: Deploy PDFs to gh-pages
+        run: |
+         cd examples
+         git init
+         git add *.pdf
+         git config --global --add safe.directory /github/workspace
+         git config --local user.email "mahesh.dharhari@gmail.com"
+         git config --local user.name "maheshdharhari"
+         git commit -m 'PDF Deployed on '"$(date +"%D %T")"
+      - name: Force push to branch 'Compiled'
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+         github_token: ${{ secrets.GITHUB_TOKEN }}
+         branch: Compiled
+         force: true
+         directory: ./document
